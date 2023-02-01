@@ -55,8 +55,8 @@ import org.cloudbus.cloudsim.sdn.policies.vmallocation.VmMigrationPolicy;
  * @since CloudSimSDN 1.0
  */
 public class ACN {
-	protected static String physicalTopologyFile 	= "resources/physical.fattree.json";
-	protected static String deploymentFile 		= "resources/sfc.virtual.json";
+	protected static String physicalTopologyFile 	= "project-acn/resources/physical.fattree.json";
+	protected static String deploymentFile 		= "project-acn/resources/sfc.virtual.json";
 	protected static String [] workload_files 			= { 
 		"dataset-energy/energy-workload.csv",
 		//"sdn-example-workload-normal-user.csv",	
@@ -98,14 +98,10 @@ public class ACN {
 
 	public static void setExpName(String policy, String sfOn) {
 		if(Configuration.SFC_AUTOSCALE_ENABLE) {
-			Configuration.experimentName = String.format("SFC_On_%s_%d_%s_", sfOn, (int)Configuration.migrationTimeInterval, 
-					policy
-				);
+			Configuration.experimentName = String.format("ACN_On_%s_%s_", sfOn, policy);
 		}
 		else {
-			Configuration.experimentName = String.format("SFC_Off_%s_%d_%s_", sfOn, (int)Configuration.migrationTimeInterval,
-					policy
-				);
+			Configuration.experimentName = String.format("ACN_Off_%s_%s_", sfOn, policy);
 		}
 	}
 
@@ -121,7 +117,12 @@ public class ACN {
 		
 		//SDNBroker.experimentStartTime = 73800;
 		//SDNBroker.experimentFinishTime = 77400;
-		
+
+		// Initialize
+		Configuration.monitoringTimeInterval = 1; // 1 minute
+		Configuration.TIME_OUT = 10;//10 second SLA
+		Configuration.workingDirectory = "project-acn/";
+
 		CloudSimEx.setStartTime();
 		
 		// Parse system arguments
@@ -145,7 +146,8 @@ public class ACN {
 
 		setExpName(policy, sfcOn);
 		VmAllocationPolicyEnum vmAllocPolicy = VmAllocationPolicyEnum.valueOf(policy);
-
+		//physical and virtual topology files have been hard coded
+		/*
 		//2. Physical Topology filename
 		if(args.length > n)
 			physicalTopologyFile = args[n++];
@@ -153,7 +155,7 @@ public class ACN {
 		//3. Virtual Topology filename
 		if(args.length > n)
 			deploymentFile = args[n++];
-
+		*/
 		//4. Workload files
 		//4-1. Group workloads: <start_index_1> <end_index_1> <file_suffix_1> ...
 		//4-2. Normal workloads: <working_directory> <filename1> <filename2> ...
@@ -166,6 +168,7 @@ public class ACN {
 					Integer startNum = Integer.parseInt(args[i++]);
 					Integer endNum = Integer.parseInt(args[i++]);
 					String filenameSuffix = args[i++];
+					System.out.println(startNum+" ** " +endNum+" ** " +filenameSuffix);
 					List<String> names = createGroupWorkloads(startNum, endNum, filenameSuffix);
 					workloads.addAll(names);					
 				}
@@ -195,8 +198,6 @@ public class ACN {
 		Log.printLine("Starting CloudSim SDN...");
 
 		try {
-			// Initialize
-			Configuration.monitoringTimeInterval = 1; // 1 minute
 			int num_user = 1; // number of cloud users
 			Calendar calendar = Calendar.getInstance();
 			boolean trace_flag = false; // mean trace events
@@ -477,7 +478,8 @@ public class ACN {
 		List<String> filenameList = new ArrayList<String>();
 		
 		for(int set=start; set<=end; set++) {
-			String filename = Configuration.workingDirectory+set+"_" + filename_suffix_group;
+			String filename = "resources/workloads/"+start +"_" +set +"_" + filename_suffix_group;
+			//System.out.println("holaa   " + filename);
 			filenameList.add(filename);
 		}
 		return filenameList;

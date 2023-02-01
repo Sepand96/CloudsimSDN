@@ -1,0 +1,29 @@
+Data center infrastructure (Physical Topology) : project-acn/resources/physical.fattree.json
+Virtual Machine and Network requests (Virtual Topology) : project-acn/resources/sfc.virtual.json
+Workloads in project-acn/ :
+  project-acn/resources/workloads/0_0_workload_wiki.csv
+  project-acn/resources/workloads/0_1_workload_wiki.csv
+  project-acn/resources/workloads/0_2_workload_wiki.csv
+  project-acn/resources/workloads/0_3_workload_wiki.csv
+  project-acn/resources/workloads/0_4_workload_wiki.csv
+  project-acn/resources/workloads/0_5_workload_wiki.csv
+  project-acn/resources/workloads/0_6_workload_wiki.csv
+  project-acn/resources/workloads/0_7_workload_wiki.csv
+  project-acn/resources/workloads/0_8_workload_wiki.csv
+  project-acn/resources/workloads/0_9_workload_wiki.csv
+  project-acn/resources/workloads/0_10_workload_wiki.csv
+  project-acn/resources/workloads/0_11_workload_wiki.csv
+  project-acn/resources/workloads/0_12_workload_wiki.csv
+  project-acn/resources/workloads/0_13_workload_wiki.csv
+  project-acn/resources/workloads/0_14_workload_wiki.csv
+  project-acn/resources/workloads/0_15_workload_wiki.csv
+  project-acn/resources/workloads/0_16_workload_wiki.csv
+  project-acn/resources/workloads/0_17_workload_wiki.csv
+  project-acn/resources/workloads/0_18_workload_wiki.csv
+  project-acn/resources/workloads/0_19_workload_wiki.csv
+  project-acn/resources/workloads/0_20_workload_wiki.csv
+  project-acn/resources/workloads/0_21_workload_wiki.csv
+  project-acn/resources/workloads/0_22_workload_wiki.csv
+  project-acn/resources/workloads/0_23_workload_wiki.csv
+Starting CloudSim SDN...
+Initialising...
