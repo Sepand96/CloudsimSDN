@@ -8,6 +8,7 @@
 
 package org.cloudbus.cloudsim.sdn;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.HashMap;
@@ -18,6 +19,13 @@ public class LogWriter {
 	private static HashMap<String,LogWriter> map = new HashMap<String,LogWriter>();
 	
 	private LogWriter(String name) {
+		// create directory
+		File myFile = new File(name).getAbsoluteFile();
+		File outputDir = new File(myFile.getParent());
+		if (!outputDir.exists()) {
+			outputDir.mkdirs();
+		}
+		// create file handler
 		out = openfile(name);
 	}
 	
