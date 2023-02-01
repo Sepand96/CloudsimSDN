@@ -91,7 +91,7 @@ public class ACN {
 	
 	private static void printUsage() {
 		String runCmd = "java SDNExample";
-		System.out.format("Usage: %s <LFF|MFF> <0|1> <physical.json> <virtual.json> <working_dir> [workload1.csv] [workload2.csv] [...]\n", runCmd);
+		System.out.format("Usage: %s <LFF|MFF|...(Policy)> <0|1(Autoscale)> <workload_id> <workload_start_index> <workload_end_index> <workload_name.csv>\n", runCmd);
 	}
 	
 	public static String policyName = "";
