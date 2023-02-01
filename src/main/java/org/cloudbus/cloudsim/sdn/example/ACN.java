@@ -91,7 +91,7 @@ public class ACN {
 	
 	private static void printUsage() {
 		String runCmd = "java SDNExample";
-		System.out.format("Usage: %s <LFF|MFF|...(Policy)> <0|1(Autoscale)> <workload_id> <workload_start_index> <workload_end_index> <workload_name.csv>\n", runCmd);
+		System.out.format("Usage: %s <LFF|MFF|...(Policy)> <0|1(Autoscale)> <workload_start_index> <workload_end_index> <workload_name.csv>\n", runCmd);
 	}
 	
 	public static String policyName = "";
@@ -160,12 +160,11 @@ public class ACN {
 				// args: <startIndex1> <endIndex1> <filename_suffix1> ... 
 				int i = n;
 				while(i < args.length) {
-					Integer id = Integer.parseInt(args[i++]);
 					Integer startNum = Integer.parseInt(args[i++]);
 					Integer endNum = Integer.parseInt(args[i++]);
 					String filenameSuffix = args[i++];
-					System.out.println(id+ "**" +startNum+" ** " +endNum+" ** " +filenameSuffix);
-					List<String> names = createGroupWorkloads(startNum, endNum, id, filenameSuffix);
+					System.out.println(startNum+" ** " +endNum+" ** " +filenameSuffix);
+					List<String> names = createGroupWorkloads(startNum, endNum, filenameSuffix);
 					workloads.addAll(names);					
 				}
 			}
@@ -470,11 +469,11 @@ public class ACN {
 	}
 	
 
-	private static List<String> createGroupWorkloads(int start, int end, int id, String filename_suffix_group) {
+	private static List<String> createGroupWorkloads(int start, int end, String filename_suffix_group) {
 		List<String> filenameList = new ArrayList<String>();
 		
 		for(int set=start; set<=end; set++) {
-			String filename = "resources/workloads/"+id +"_" +set +"_" + filename_suffix_group;
+			String filename = "resources/workloads/0_" +set +"_" + filename_suffix_group;
 			//System.out.println("holaa   " + filename);
 			filenameList.add(filename);
 		}
