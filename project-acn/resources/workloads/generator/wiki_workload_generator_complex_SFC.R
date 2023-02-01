@@ -18,6 +18,7 @@ MB=KB*1024
 
 MAX_CPU_MI = 20000 #400 MIs = 0.2 sec for 2000 MIPS vm
 
+FILE_NAME = "workload_wiki"
 
 options(scipen=500) #instead of E notation, use full representation.
 
@@ -417,7 +418,7 @@ create_historical_data<-function(langId, timelist, ratelist, webNum, appNum, dbN
       
       for(workloadId in 1:(maxNum)) {
         if(!is.list.empty(workload_list, workloadId)) {
-          filename = sprintf("%d_%d_workload_wiki.csv", langId, workloadId-1)
+          filename = sprintf("%d_%d_%s.csv", langId, workloadId-1, FILE_NAME)
           write.table(workload_list[[workloadId]], file=filename, row.names=FALSE, quote = FALSE, sep=",", col.names = !is_append, append = is_append)
           workload_list[[workloadId]] = NA
         }
@@ -428,7 +429,7 @@ create_historical_data<-function(langId, timelist, ratelist, webNum, appNum, dbN
   
   for(workloadId in 1:(maxNum)) {
     if(!is.list.empty(workload_list, workloadId)) {
-      filename = sprintf("%d_%d_workload_wiki.csv", langId, workloadId-1)
+      filename = sprintf("%d_%d_%s.csv", langId, workloadId-1, FILE_NAME)
       write.table(workload_list[[workloadId]], file=filename, row.names=FALSE, quote = FALSE, sep=",", col.names = !is_append, append = is_append)
       workload_list[[workloadId]] = NA
     }
