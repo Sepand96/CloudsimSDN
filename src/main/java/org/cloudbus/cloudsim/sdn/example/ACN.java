@@ -55,8 +55,8 @@ import org.cloudbus.cloudsim.sdn.policies.vmallocation.VmMigrationPolicy;
  * @since CloudSimSDN 1.0
  */
 public class ACN {
-	protected static String physicalTopologyFile 	= "dataset-energy/energy-physical.json";
-	protected static String deploymentFile 		= "dataset-energy/energy-virtual.json";
+	protected static String physicalTopologyFile 	= "resources/physical.fattree.json";
+	protected static String deploymentFile 		= "resources/sfc.virtual.json";
 	protected static String [] workload_files 			= { 
 		"dataset-energy/energy-workload.csv",
 		//"sdn-example-workload-normal-user.csv",	
@@ -347,7 +347,7 @@ public class ACN {
 			submitWorkloads(broker);
 			
 			// Sixth step: Starts the simulation
-			if(!ACN.logEnabled) 
+			if(!ACN.logEnabled)
 				Log.disable();
 			
 			double finishTime = CloudSim.startSimulation();
