@@ -87,7 +87,7 @@ public class ACN {
 		RandomFlow,
 		MFFBW, MFFCPU,
 		END
-		}	
+		}
 	
 	private static void printUsage() {
 		String runCmd = "java SDNExample";
