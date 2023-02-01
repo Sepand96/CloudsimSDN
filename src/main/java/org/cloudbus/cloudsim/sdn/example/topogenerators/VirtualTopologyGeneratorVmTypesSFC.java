@@ -132,7 +132,7 @@ public class VirtualTopologyGeneratorVmTypesSFC extends VirtualTopologyGenerator
 		// add links between VMs
 		long linkBwPerCh = linkBw/2;
 		if(noscale)
-			linkBwPerCh = 2000000;//linkBw;
+			linkBwPerCh = 1000000;//linkBw;
 		
 		if(linkBw > 0) {
 			for(int i=0;i<maxNum;i++)
