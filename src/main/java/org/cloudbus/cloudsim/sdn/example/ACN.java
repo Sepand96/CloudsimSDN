@@ -56,7 +56,7 @@ import org.cloudbus.cloudsim.sdn.policies.vmallocation.VmMigrationPolicy;
  */
 public class ACN {
 	protected static String physicalTopologyFile 	= "project-acn/resources/physical.fattree.json";
-	protected static String deploymentFile 		= "project-acn/resources/sfc.virtual.json";
+	protected static String deploymentFile 		= "project-acn/resources/sfc.virtual.max.json";
 	protected static String [] workload_files 			= { 
 		"dataset-energy/energy-workload.csv",
 		//"sdn-example-workload-normal-user.csv",	
@@ -96,12 +96,12 @@ public class ACN {
 	
 	public static String policyName = "";
 
-	public static void setExpName(String policy, String sfOn) {
+	public static void setExpName(String policy) {
 		if(Configuration.SFC_AUTOSCALE_ENABLE) {
-			Configuration.experimentName = String.format("ACN_On_%s_%s_", sfOn, policy);
+			Configuration.experimentName = String.format("ACN_On_%s_", policy);
 		}
 		else {
-			Configuration.experimentName = String.format("ACN_Off_%s_%s_", sfOn, policy);
+			Configuration.experimentName = String.format("ACN_Off_%s_", policy);
 		}
 	}
 
@@ -120,7 +120,7 @@ public class ACN {
 
 		// Initialize
 		Configuration.monitoringTimeInterval = 1; // 1 minute
-		Configuration.TIME_OUT = 10;//10 second SLA
+		Configuration.TIME_OUT = 10; // 10 seconds SLA
 		Configuration.workingDirectory = "project-acn/";
 
 		CloudSimEx.setStartTime();
@@ -135,16 +135,11 @@ public class ACN {
 		String policy = args[n++];
 		
 		String sfcOn = args[n++];
-		if("1".equals(sfcOn)) {
-			Configuration.SFC_AUTOSCALE_ENABLE = true;
-		} 
-		else {
-			Configuration.SFC_AUTOSCALE_ENABLE = false;
-		}
+		Configuration.SFC_AUTOSCALE_ENABLE = "1".equals(sfcOn);
 		
 		//Configuration.OVERBOOKING_RATIO_INIT = Double.parseDouble(args[n++]);
 
-		setExpName(policy, sfcOn);
+		setExpName(policy);
 		VmAllocationPolicyEnum vmAllocPolicy = VmAllocationPolicyEnum.valueOf(policy);
 		//physical and virtual topology files have been hard coded
 		/*
@@ -165,11 +160,12 @@ public class ACN {
 				// args: <startIndex1> <endIndex1> <filename_suffix1> ... 
 				int i = n;
 				while(i < args.length) {
+					Integer id = Integer.parseInt(args[i++]);
 					Integer startNum = Integer.parseInt(args[i++]);
 					Integer endNum = Integer.parseInt(args[i++]);
 					String filenameSuffix = args[i++];
-					System.out.println(startNum+" ** " +endNum+" ** " +filenameSuffix);
-					List<String> names = createGroupWorkloads(startNum, endNum, filenameSuffix);
+					System.out.println(id+ "**" +startNum+" ** " +endNum+" ** " +filenameSuffix);
+					List<String> names = createGroupWorkloads(startNum, endNum, id, filenameSuffix);
 					workloads.addAll(names);					
 				}
 			}
@@ -474,11 +470,11 @@ public class ACN {
 	}
 	
 
-	private static List<String> createGroupWorkloads(int start, int end, String filename_suffix_group) {
+	private static List<String> createGroupWorkloads(int start, int end, int id, String filename_suffix_group) {
 		List<String> filenameList = new ArrayList<String>();
 		
 		for(int set=start; set<=end; set++) {
-			String filename = "resources/workloads/"+start +"_" +set +"_" + filename_suffix_group;
+			String filename = "resources/workloads/"+id +"_" +set +"_" + filename_suffix_group;
 			//System.out.println("holaa   " + filename);
 			filenameList.add(filename);
 		}
