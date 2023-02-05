@@ -91,7 +91,7 @@ public class ACN {
 	
 	private static void printUsage() {
 		String runCmd = "java SDNExample";
-		System.out.format("Usage: %s <LFF|MFF|...(Policy)> <0|1(Autoscale)> <workload_start_index> <workload_end_index> <workload_name.csv>\n", runCmd);
+		System.out.format("Usage: %s <LFF|MFF|...(Policy)> <min|max(Mode)> <0|1(Autoscale)> <workload_start_index> <workload_end_index> <workload_name.csv>\n", runCmd);
 	}
 	
 	public static String policyName = "";
@@ -133,6 +133,11 @@ public class ACN {
 		
 		//1. Policy: MFF, LFF, ...
 		String policy = args[n++];
+
+		String mode = args[n++];
+		if (mode.equals("max")) {
+			deploymentFile = "project-acn/resources/sfc.virtual.max.json";
+		}
 		
 		String sfcOn = args[n++];
 		Configuration.SFC_AUTOSCALE_ENABLE = "1".equals(sfcOn);
