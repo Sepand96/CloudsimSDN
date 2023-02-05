@@ -55,9 +55,9 @@ import org.cloudbus.cloudsim.sdn.policies.vmallocation.VmMigrationPolicy;
  * @since CloudSimSDN 1.0
  */
 public class ACN {
-	protected static String physicalTopologyFile 	= "project-acn/resources/physical.fattree.json";
-	protected static String deploymentFile 		= "project-acn/resources/sfc.virtual.max.json";
-	protected static String [] workload_files 			= { 
+	protected static String physicalTopologyFile 	= "project-acn/resources/sfc.physical.fattree.json";
+	protected static String deploymentFile 		= "project-acn/resources/sfc.virtual.min.json";
+	protected static String [] workload_files = {
 		"dataset-energy/energy-workload.csv",
 		//"sdn-example-workload-normal-user.csv",	
 		//"sdn-example-workload-prio-user-prio-ch.csv",

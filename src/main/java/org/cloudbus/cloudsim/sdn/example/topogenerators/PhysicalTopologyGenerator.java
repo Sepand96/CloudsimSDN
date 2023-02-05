@@ -62,7 +62,7 @@ import org.json.simple.JSONObject;
 public class PhysicalTopologyGenerator {
 
 	public static void main(String [] argv) {
-		startConst();
+		startTest();
 	}
 	
 	public static void startConst() {		
@@ -74,11 +74,11 @@ public class PhysicalTopologyGenerator {
 		
 		long iops = 1000000000L;
 		
-		int pe = 16;
-		long mips = 10000;//8000;
+		int pe = 4;
+		long mips = 400;//8000;
 		int ram = 10240;
 		long storage = 10000000;
-		long bw = 200000000; //125MB = 1Gb
+		long bw = 125000000; //125MB = 1Gb
 		//long bw = 1000000000;
 		
 		PhysicalTopologyGenerator reqg = new PhysicalTopologyGenerator();
