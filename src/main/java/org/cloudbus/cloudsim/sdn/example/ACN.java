@@ -141,6 +141,7 @@ public class ACN {
 		
 		String sfcOn = args[n++];
 		Configuration.SFC_AUTOSCALE_ENABLE = "1".equals(sfcOn);
+		Configuration.SFC_LATENCY_AWARE_ENABLE = Configuration.SFC_AUTOSCALE_ENABLE;
 		
 		//Configuration.OVERBOOKING_RATIO_INIT = Double.parseDouble(args[n++]);
 
