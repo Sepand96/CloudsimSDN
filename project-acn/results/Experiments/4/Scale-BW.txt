@@ -27,21 +27,21 @@ Workloads in project-acn/ :
   resources/workloads/0_23_workload_wiki_mini.csv
 Starting CloudSim SDN...
 Initialising...
-5050.0: ========== EXPERIMENT FINISHED ===========
+5300.0: ========== EXPERIMENT FINISHED ===========
 ========== HOST POWER CONSUMPTION based on Actual Workload processing ===========
-Host #127: 187.0636681077347
-Host #126: 187.34365721746784
-Host #125: 283.1941162191139
-Host #124: 196.79579618433266
-Host #123: 196.92143947178812
-Host #122: 196.85226452175954
-Host #121: 252.92720444835743
-Host #120: 186.93068670870503
-Host #119: 187.2732990132546
-Host #118: 186.91769112139772
-Host #117: 186.84075346070006
-Host #116: 186.9586317119206
-Host #115: 200.99858761134405
+Host #127: 189.8785656557742
+Host #126: 190.11088107104362
+Host #125: 285.68335697062275
+Host #124: 202.92717247797344
+Host #123: 199.27645170561433
+Host #122: 199.05976327953044
+Host #121: 255.614920141535
+Host #120: 189.6961890245697
+Host #119: 190.01862813183945
+Host #118: 189.48473954119083
+Host #117: 189.49995399321858
+Host #116: 189.6704009782855
+Host #115: 203.37527940498487
 Host #114: 0.0
 Host #113: 0.0
 Host #112: 0.0
@@ -158,14 +158,14 @@ Host #2: 0.0
 Host #1: 0.0
 Host #0: 0.0
 ========== SWITCH POWER CONSUMPTION AND DETAILED UTILIZATION ===========
-Switch:a_7_3: 98.4950331692214
-Switch:e_7_3: 103.38397504917675
-Switch:a_7_2: 97.96919106494171
-Switch:e_7_2: 103.84034059241822
-Switch:a_7_1: 98.29773647745823
-Switch:e_7_1: 103.76604881292974
-Switch:a_7_0: 97.91418289118543
-Switch:e_7_0: 99.6400532996349
+Switch:a_7_3: 97.77252357500156
+Switch:e_7_3: 102.86108818761784
+Switch:a_7_2: 97.4356376748655
+Switch:e_7_2: 103.60204603841376
+Switch:a_7_1: 98.3086995249581
+Switch:e_7_1: 103.50299705827082
+Switch:a_7_0: 97.83933984924634
+Switch:e_7_0: 99.59153833044624
 Switch:a_6_3: 0.0
 Switch:e_6_3: 0.0
 Switch:a_6_2: 0.0
@@ -420,7 +420,7 @@ DECIDE_SLA_VIOLATION_GRACE_ERROR:1.0
 ========== PARAMETERS ===========
 experimentName :ACN_On_MFFBW_
 CPU_REQUIRED_MIPS_PER_WORKLOAD_PERCENT:1.0
-monitoringTimeInterval:10.0
+monitoringTimeInterval:100.0
 overbookingTimeWindowNumPoints:1.0
 migrationTimeInterval:5.0
 OVERBOOKING_RATIO_MAX:1.0
@@ -429,9 +429,9 @@ OVERBOOKING_RATIO_INIT:1.0
 OVERBOOKING_RATIO_UTIL_PORTION:0.0
 OVERLOAD_HOST_PERCENTILE_THRESHOLD:0.0
 ========== TOTAL POWER CONSUMPTION ===========
-Host energy consumed: 2637.0177957978763
-Switch energy consumed: 803.3065613569663
-Total energy consumed: 3440.324357154843
+Host energy consumed: 2674.296302376183
+Switch energy consumed: 800.9138702388202
+Total energy consumed: 3475.210172615003
 ========== MIGRATION ===========
 Attempted: 0
 Completed: 0
@@ -443,25 +443,25 @@ Scaled overloaded: 1.0
 Overloaded Percent: 0.0
 Simultanously used hosts:13
 ============= SDNBroker.printResult() =============================
-Workloads Num: 314755
-Workloads CPU Num: 1573775
-Workloads Network Num: 1259020
-Workloads Timed Out Num: 430416
-Total serve time: 7227819.562037017
-Total serve time CPU: 44229.6444748129
-Total serve time Network: 7183589.917562198
-Avg serve time: 22.963319286546735
+Workloads Num: 312733
+Workloads CPU Num: 1563665
+Workloads Network Num: 1250932
+Workloads Timed Out Num: 432438
+Total serve time: 7200841.140681568
+Total serve time CPU: 44197.944447478716
+Total serve time Network: 7156643.196234087
+Avg serve time: 23.025523819621107
 Overall overtime percentage: 0.0
-Avg serve time CPU: 0.028104172753292498
+Avg serve time CPU: 0.028265609607862757
 CPU overtime percentage: 0.0
-Avg serve time Network: 5.705699605695063
-Network overtime percentage: 0.8466100617940938
+Avg serve time Network: 5.721048942895447
+Network overtime percentage: 0.8594927621965063
 ============= SDNBroker.printResult() Group analysis =======================
-Group num: 0, groupNumWorkloads:314755
-Group num: 0, groupTotalServetime:7227819.562037017
-Group num: 0, groupTotalServetimeCPU:44229.6444748129
-Group num: 0, groupTotalServetimeNetwork:7183589.917562198
-Group num: 0, group avg Serve time:22.963319286546735
-Group num: 0, group avg Serve time CPU:0.14052086376646247
-Group num: 0, group avg Serve time Network:22.822798422780252
+Group num: 0, groupNumWorkloads:312733
+Group num: 0, groupTotalServetime:7200841.140681568
+Group num: 0, groupTotalServetimeCPU:44197.944447478716
+Group num: 0, groupTotalServetimeNetwork:7156643.196234087
+Group num: 0, group avg Serve time:23.025523819621107
+Group num: 0, group avg Serve time CPU:0.14132804803931379
+Group num: 0, group avg Serve time Network:22.884195771581787
 CloudSim SDN finished!

@@ -29,23 +29,23 @@ Starting CloudSim SDN...
 Initialising...
 5006.0: ========== EXPERIMENT FINISHED ===========
 ========== HOST POWER CONSUMPTION based on Actual Workload processing ===========
-Host #127: 199.9654426572322
-Host #126: 199.9622311164764
-Host #125: 234.93878456717022
-Host #124: 205.01760983328262
-Host #123: 205.01407309315292
-Host #122: 205.1111979191638
-Host #121: 237.78022118294797
-Host #120: 201.43820117050333
-Host #119: 201.61074454301126
-Host #118: 201.4516620085376
-Host #117: 201.6040237061602
-Host #116: 201.732622174374
-Host #115: 235.5722949378762
-Host #114: 268.735816970688
-Host #113: 252.16364854229158
-Host #112: 156.0243661684215
-Host #111: 0.20690558325553127
+Host #127: 199.93344389883126
+Host #126: 199.92047759949776
+Host #125: 234.94466223476923
+Host #124: 205.05680069556178
+Host #123: 205.07626191086172
+Host #122: 205.08341529631423
+Host #121: 240.02383655731865
+Host #120: 201.4588909095528
+Host #119: 201.57748669362766
+Host #118: 201.53427365201142
+Host #117: 201.58520148567408
+Host #116: 201.75188821749705
+Host #115: 237.74667401174517
+Host #114: 264.96793833959055
+Host #113: 257.4609201859852
+Host #112: 151.19487431017217
+Host #111: 0.0
 Host #110: 0.0
 Host #109: 0.0
 Host #108: 0.0
@@ -158,19 +158,19 @@ Host #2: 0.0
 Host #1: 0.0
 Host #0: 0.0
 ========== SWITCH POWER CONSUMPTION AND DETAILED UTILIZATION ===========
-Switch:a_7_3: 98.24920348040828
-Switch:e_7_3: 103.80555595000358
-Switch:a_7_2: 98.24821808597933
-Switch:e_7_2: 103.81018233390968
-Switch:a_7_1: 98.24460189724624
-Switch:e_7_1: 103.80701659430783
-Switch:a_7_0: 98.24601727779782
-Switch:e_7_0: 103.31802611655775
-Switch:a_6_3: 0.03089782500000358
-Switch:e_6_3: 0.08456636944444874
+Switch:a_7_3: 98.2520528994679
+Switch:e_7_3: 103.80916108890194
+Switch:a_7_2: 98.24221569168913
+Switch:e_7_2: 103.81554489113505
+Switch:a_7_1: 98.25402206337286
+Switch:e_7_1: 103.62500900504776
+Switch:a_7_0: 98.06051342239965
+Switch:e_7_0: 103.40842074591504
+Switch:a_6_3: 0.0
+Switch:e_6_3: 0.0
 Switch:a_6_2: 0.0
 Switch:e_6_2: 0.0
-Switch:a_6_1: 0.07114266666666787
+Switch:a_6_1: 0.0
 Switch:e_6_1: 0.0
 Switch:a_6_0: 0.0
 Switch:e_6_0: 0.0
@@ -223,7 +223,7 @@ Switch:e_0_1: 0.0
 Switch:a_0_0: 0.0
 Switch:e_0_0: 0.0
 Switch:c_3_3: 0.0
-Switch:c_3_2: 0.03089782500000358
+Switch:c_3_2: 0.0
 Switch:c_3_1: 0.0
 Switch:c_3_0: 0.0
 Switch:c_2_3: 0.0
@@ -232,7 +232,7 @@ Switch:c_2_1: 0.0
 Switch:c_2_0: 0.0
 Switch:c_1_3: 0.0
 Switch:c_1_2: 0.0
-Switch:c_1_1: 0.07114266666666787
+Switch:c_1_1: 0.0
 Switch:c_1_0: 0.0
 Switch:c_0_3: 0.0
 Switch:c_0_2: 0.0
@@ -381,8 +381,8 @@ Vm(VM #25 (web0-3) in (h_7_2_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #26 (web0-2) in (h_7_2_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #32 (web0-7) in (h_7_2_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #34 (web0-5) in (h_7_2_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #8 (ids0) in (h_7_2_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #31 (lb20) in (h_7_2_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #8 (ids0) in (h_7_2_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #6 (app0-2) in (h_7_2_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #9 (app0-21) in (h_7_2_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #10 (app0-17) in (h_7_2_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
@@ -407,9 +407,9 @@ Vm(VM #30 (app0-8) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #37 (app0-1) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #36 (lb10) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #39 (lb10-dup39) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #43 (lb10-dup43) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #42 (lb10-dup42) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #40 (lb20-dup40) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #38 (fw0-dup38) in (h_7_0_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #42 (lb20-dup42) in (h_7_0_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 ========== CONFIGURATIONS ===========
 workingDirectory :project-acn/
 overbookingTimeWindowInterval:5.0
@@ -433,9 +433,9 @@ OVERBOOKING_RATIO_INIT:1.0
 OVERBOOKING_RATIO_UTIL_PORTION:0.0
 OVERLOAD_HOST_PERCENTILE_THRESHOLD:0.0
 ========== TOTAL POWER CONSUMPTION ===========
-Host energy consumed: 3408.329846174545
-Switch energy consumed: 808.0174690889883
-Total energy consumed: 4216.347315263533
+Host energy consumed: 3409.317045999011
+Switch energy consumed: 807.4669398079293
+Total energy consumed: 4216.78398580694
 ========== MIGRATION ===========
 Attempted: 0
 Completed: 0
@@ -445,27 +445,27 @@ Overloaded Percent: 0.0
 ========== VM OVERLOADED ===========
 Scaled overloaded: 1.0
 Overloaded Percent: 0.0
-Simultanously used hosts:17
+Simultanously used hosts:16
 ============= SDNBroker.printResult() =============================
-Workloads Num: 744381
-Workloads CPU Num: 3721905
-Workloads Network Num: 2977524
-Workloads Timed Out Num: 781
-Total serve time: 981463.7535964396
-Total serve time CPU: 106591.09535053498
-Total serve time Network: 874872.6582459018
-Avg serve time: 1.3184965140115608
+Workloads Num: 744346
+Workloads CPU Num: 3721730
+Workloads Network Num: 2977384
+Workloads Timed Out Num: 820
+Total serve time: 944133.0035535509
+Total serve time CPU: 106561.00491490221
+Total serve time Network: 837571.9986386462
+Avg serve time: 1.2684060954899348
 Overall overtime percentage: 0.0
-Avg serve time CPU: 0.028638854390570144
+Avg serve time CPU: 0.028632115955456793
 CPU overtime percentage: 0.0
-Avg serve time Network: 0.29382556051467656
-Network overtime percentage: 0.897747255773589
+Avg serve time Network: 0.2813113789281618
+Network overtime percentage: 0.9035267201005984
 ============= SDNBroker.printResult() Group analysis =======================
-Group num: 0, groupNumWorkloads:744381
-Group num: 0, groupTotalServetime:981463.7535964396
-Group num: 0, groupTotalServetimeCPU:106591.09535053498
-Group num: 0, groupTotalServetimeNetwork:874872.6582459018
-Group num: 0, group avg Serve time:1.3184965140115608
-Group num: 0, group avg Serve time CPU:0.14319427195285073
-Group num: 0, group avg Serve time Network:1.1753022420587063
+Group num: 0, groupNumWorkloads:744346
+Group num: 0, groupTotalServetime:944133.0035535509
+Group num: 0, groupTotalServetimeCPU:106561.00491490221
+Group num: 0, groupTotalServetimeNetwork:837571.9986386462
+Group num: 0, group avg Serve time:1.2684060954899348
+Group num: 0, group avg Serve time CPU:0.14316057977728397
+Group num: 0, group avg Serve time Network:1.1252455157126473
 CloudSim SDN finished!

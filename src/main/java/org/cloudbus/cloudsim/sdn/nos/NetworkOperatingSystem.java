@@ -185,7 +185,7 @@ public abstract class NetworkOperatingSystem extends SimEntity {
 					// For experiment 5
 					if (Configuration.DELAY_ON_CHECK) {
 						try {
-							Thread.sleep(5000);
+							Thread.sleep(1000);
 						} catch (InterruptedException e) {
 							throw new RuntimeException(e);
 						}

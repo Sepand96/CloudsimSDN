@@ -113,11 +113,11 @@ public class ACN {
 	 */
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws FileNotFoundException {
-		// NoScale-Max: MFF max 0 0 23 workload_wiki.csv
-		// NoScale-Min: MFF min 0 0 23 workload_wiki.csv
-		// Scale: MFF min 1 0 23 workload_wiki.csv
-		// Scale-BW: MFFBW min 1 0 23 workload_wiki.csv
-		// Scale-NF: MFFCPU min 1 0 23 workload_wiki.csv
+		// NoScale-Max: MFF max 0 0 23 workload_wiki_mini.csv
+		// NoScale-Min: MFF min 0 0 23 workload_wiki_mini.csv
+		// Scale: MFF min 1 0 23 workload_wiki_mini.csv
+		// Scale-BW: MFFBW min 1 0 23 workload_wiki_mini.csv
+		// Scale-NF: MFFCPU min 1 0 23 workload_wiki_mini.csv
 
 		int n = 0;
 		
@@ -129,11 +129,11 @@ public class ACN {
 		Configuration.TIME_OUT = 10; // 10 seconds SLA
 		Configuration.workingDirectory = "project-acn/";
 		// Experiment 1
-//		Configuration.CPU_REQUIRED_MIPS_PER_WORKLOAD_PERCENT = 0.1;
+//		Configuration.CPU_SIZE_MULTIPLY = 0.1;
 		// Experiment 2
 //		Configuration.NETWORK_PACKET_SIZE_MULTIPLY = 10;
 		// Experiment 4
-//		Configuration.monitoringTimeInterval = 10;
+//		Configuration.monitoringTimeInterval = 100;
 		// Experiment 5
 //		Configuration.DELAY_ON_CHECK = true;
 

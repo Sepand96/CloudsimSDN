@@ -80,7 +80,7 @@ public class Configuration {
 
 	//*/
 	//////////////////////////// Default value
-	public static final double CPU_SIZE_MULTIPLY = 1;	// Multiply all the CPU size for scale. Default =1 (No amplify) 
+	public static double CPU_SIZE_MULTIPLY = 1;	// Multiply all the CPU size for scale. Default =1 (No amplify)
 	public static double NETWORK_PACKET_SIZE_MULTIPLY = 1;	// Multiply all the network packet size. Default =1 (No amplify)
 	
 	public static double monitoringTimeInterval = 5; // every 1800 seconds, polling utilization.

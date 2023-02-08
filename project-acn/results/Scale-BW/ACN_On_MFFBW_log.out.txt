@@ -158,14 +158,14 @@ Host #2: 0.0
 Host #1: 0.0
 Host #0: 0.0
 ========== SWITCH POWER CONSUMPTION AND DETAILED UTILIZATION ===========
-Switch:a_7_3: 98.41767260770864
-Switch:e_7_3: 103.19759587823951
-Switch:a_7_2: 97.8358738687718
-Switch:e_7_2: 103.65478971643392
-Switch:a_7_1: 98.16317267549857
-Switch:e_7_1: 103.64012611157389
-Switch:a_7_0: 97.67312925156914
-Switch:e_7_0: 99.42014364000342
+Switch:a_7_3: 97.90426428559367
+Switch:e_7_3: 102.91024451735338
+Switch:a_7_2: 97.25096465778684
+Switch:e_7_2: 103.57924430009236
+Switch:a_7_1: 98.47678129673224
+Switch:e_7_1: 103.63699463938771
+Switch:a_7_0: 97.56949939674541
+Switch:e_7_0: 99.5815785288397
 Switch:a_6_3: 0.0
 Switch:e_6_3: 0.0
 Switch:a_6_2: 0.0
@@ -430,8 +430,8 @@ OVERBOOKING_RATIO_UTIL_PORTION:0.0
 OVERLOAD_HOST_PERCENTILE_THRESHOLD:0.0
 ========== TOTAL POWER CONSUMPTION ===========
 Host energy consumed: 2634.1372727008734
-Switch energy consumed: 802.0025037497988
-Total energy consumed: 3436.1397764506723
+Switch energy consumed: 800.9095716225313
+Total energy consumed: 3435.046844323405
 ========== MIGRATION ===========
 Attempted: 0
 Completed: 0
@@ -447,10 +447,10 @@ Workloads Num: 314585
 Workloads CPU Num: 1572925
 Workloads Network Num: 1258340
 Workloads Timed Out Num: 430586
-Total serve time: 7134980.5371253565
+Total serve time: 7134980.537125358
 Total serve time CPU: 44246.59630143982
 Total serve time Network: 7090733.9408239145
-Avg serve time: 22.68061267105983
+Avg serve time: 22.680612671059837
 Overall overtime percentage: 0.0
 Avg serve time CPU: 0.028130137356479058
 CPU overtime percentage: 0.0
@@ -458,10 +458,10 @@ Avg serve time Network: 5.634990496069356
 Network overtime percentage: 0.8646208496908626
 ============= SDNBroker.printResult() Group analysis =======================
 Group num: 0, groupNumWorkloads:314585
-Group num: 0, groupTotalServetime:7134980.5371253565
+Group num: 0, groupTotalServetime:7134980.537125358
 Group num: 0, groupTotalServetimeCPU:44246.59630143982
 Group num: 0, groupTotalServetimeNetwork:7090733.9408239145
-Group num: 0, group avg Serve time:22.68061267105983
+Group num: 0, group avg Serve time:22.680612671059837
 Group num: 0, group avg Serve time CPU:0.14065068678239528
 Group num: 0, group avg Serve time Network:22.539961984277426
 CloudSim SDN finished!

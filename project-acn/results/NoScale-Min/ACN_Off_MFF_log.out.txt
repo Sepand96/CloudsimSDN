@@ -1,4 +1,4 @@
-Data center infrastructure (Physical Topology) : project-acn/resources/physical.fattree.json
+Data center infrastructure (Physical Topology) : project-acn/resources/sfc.physical.fattree.json
 Virtual Machine and Network requests (Virtual Topology) : project-acn/resources/sfc.virtual.min.json
 Workloads in project-acn/ :
   resources/workloads/0_0_workload_wiki_mini.csv
@@ -158,14 +158,14 @@ Host #2: 0.0
 Host #1: 0.0
 Host #0: 0.0
 ========== SWITCH POWER CONSUMPTION AND DETAILED UTILIZATION ===========
-Switch:a_7_3: 98.32594341626057
-Switch:e_7_3: 102.55491258858342
-Switch:a_7_2: 96.96649667617653
-Switch:e_7_2: 103.90235942176572
-Switch:a_7_1: 98.34034265260493
-Switch:e_7_1: 103.8665395999114
-Switch:a_7_0: 98.32430800546695
-Switch:e_7_0: 99.73649003700922
+Switch:a_7_3: 98.34921320488098
+Switch:e_7_3: 103.69910731078602
+Switch:a_7_2: 98.13731423013881
+Switch:e_7_2: 103.90230544954248
+Switch:a_7_1: 98.30856818457713
+Switch:e_7_1: 103.86571048879632
+Switch:a_7_0: 98.29098747777503
+Switch:e_7_0: 99.73288550700711
 Switch:a_6_3: 0.0
 Switch:e_6_3: 0.0
 Switch:a_6_2: 0.0
@@ -430,8 +430,8 @@ OVERBOOKING_RATIO_UTIL_PORTION:0.0
 OVERLOAD_HOST_PERCENTILE_THRESHOLD:0.0
 ========== TOTAL POWER CONSUMPTION ===========
 Host energy consumed: 2632.3236509701355
-Switch energy consumed: 802.0173923977788
-Total energy consumed: 3434.3410433679146
+Switch energy consumed: 804.286091853504
+Total energy consumed: 3436.6097428236394
 ========== MIGRATION ===========
 Attempted: 0
 Completed: 0
@@ -447,21 +447,21 @@ Workloads Num: 323236
 Workloads CPU Num: 1616180
 Workloads Network Num: 1292944
 Workloads Timed Out Num: 421935
-Total serve time: 7980507.372449001
-Total serve time CPU: 45523.46390223367
-Total serve time Network: 7934983.908546759
-Avg serve time: 24.68941384143165
+Total serve time: 7980507.372449002
+Total serve time CPU: 45523.46390223368
+Total serve time Network: 7934983.90854676
+Avg serve time: 24.689413841431655
 Overall overtime percentage: 0.0
-Avg serve time CPU: 0.028167322886209253
+Avg serve time CPU: 0.028167322886209257
 CPU overtime percentage: 0.0
-Avg serve time Network: 6.1371443067501446
+Avg serve time Network: 6.137144306750145
 Network overtime percentage: 0.8225654011310621
 ============= SDNBroker.printResult() Group analysis =======================
 Group num: 0, groupNumWorkloads:323236
-Group num: 0, groupTotalServetime:7980507.372449001
-Group num: 0, groupTotalServetimeCPU:45523.46390223367
-Group num: 0, groupTotalServetimeNetwork:7934983.908546759
-Group num: 0, group avg Serve time:24.68941384143165
-Group num: 0, group avg Serve time CPU:0.14083661443104625
-Group num: 0, group avg Serve time Network:24.548577227000578
+Group num: 0, groupTotalServetime:7980507.372449002
+Group num: 0, groupTotalServetimeCPU:45523.46390223368
+Group num: 0, groupTotalServetimeNetwork:7934983.90854676
+Group num: 0, group avg Serve time:24.689413841431655
+Group num: 0, group avg Serve time CPU:0.14083661443104628
+Group num: 0, group avg Serve time Network:24.54857722700058
 CloudSim SDN finished!
