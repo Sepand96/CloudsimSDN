@@ -1,4 +1,4 @@
-Data center infrastructure (Physical Topology) : project-acn/resources/physical.fattree.json
+Data center infrastructure (Physical Topology) : project-acn/resources/sfc.physical.fattree.json
 Virtual Machine and Network requests (Virtual Topology) : project-acn/resources/sfc.virtual.min.json
 Workloads in project-acn/ :
   resources/workloads/0_0_workload_wiki_mini.csv

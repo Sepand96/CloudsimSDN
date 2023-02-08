@@ -182,6 +182,15 @@ public abstract class NetworkOperatingSystem extends SimEntity {
 				this.updateSwitchMonitor(Configuration.monitoringTimeInterval);				
 				
 				if(CloudSim.clock() >= lastMigration + Configuration.migrationTimeInterval && this.datacenter != null) {
+					// For experiment 5
+					if (Configuration.DELAY_ON_CHECK) {
+						try {
+							Thread.sleep(5000);
+						} catch (InterruptedException e) {
+							throw new RuntimeException(e);
+						}
+					}
+
 					sfcScaler.scaleSFC();	// Start SFC Auto Scaling
 					
 					this.datacenter.startMigrate(); // Start Migration

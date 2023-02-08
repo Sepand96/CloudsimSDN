@@ -81,7 +81,7 @@ public class Configuration {
 	//*/
 	//////////////////////////// Default value
 	public static final double CPU_SIZE_MULTIPLY = 1;	// Multiply all the CPU size for scale. Default =1 (No amplify) 
-	public static final double NETWORK_PACKET_SIZE_MULTIPLY = 1;	// Multiply all the network packet size. Default =1 (No amplify) 
+	public static double NETWORK_PACKET_SIZE_MULTIPLY = 1;	// Multiply all the network packet size. Default =1 (No amplify)
 	
 	public static double monitoringTimeInterval = 5; // every 1800 seconds, polling utilization.
 	
@@ -108,7 +108,7 @@ public class Configuration {
 	public static final double OVERBOOKING_RATIO_UTIL_PORTION = (OVERBOOKING_RATIO_MAX - OVERBOOKING_RATIO_MIN)*0.2;	
 	public static final double OVERLOAD_HOST_PERCENTILE_THRESHOLD = 0.0;	// If 5% of time is overloaded, host is overloaded
 	
-	public static final double CPU_REQUIRED_MIPS_PER_WORKLOAD_PERCENT = 1.0;//0.05;	// 20% of CPU resource is required to process 1 workload
+	public static double CPU_REQUIRED_MIPS_PER_WORKLOAD_PERCENT = 1.0;//0.05;	// 20% of CPU resource is required to process 1 workload
 	
 	public static final double HOST_ACTIVE_AVERAGE_UTIL_THRESHOLD = 0;
 	
@@ -133,6 +133,8 @@ public class Configuration {
 	public static boolean DEBUG_RESULT_WRITE_DETAIL = true;
 	public static boolean DEBUG_PRINT_DETAIL_SIZE_TIME = true;
 	public static boolean DEBUG_CHECK_OVER_TIME_REQUESTS = false;
+
+	public static boolean DELAY_ON_CHECK = false;
 
 	//*/	
 }
