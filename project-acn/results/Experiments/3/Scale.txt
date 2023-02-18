@@ -1,5 +1,5 @@
 Data center infrastructure (Physical Topology) : project-acn/resources/sfc.physical.fattree.json
-Virtual Machine and Network requests (Virtual Topology) : project-acn/resources/sfc.virtual.min.json
+Virtual Machine and Network requests (Virtual Topology) : project-acn/resources/sfc.virtual.min.experiment3.json
 Workloads in project-acn/ :
   resources/workloads/0_0_workload_wiki_mini.csv
   resources/workloads/0_1_workload_wiki_mini.csv
@@ -27,42 +27,42 @@ Workloads in project-acn/ :
   resources/workloads/0_23_workload_wiki_mini.csv
 Starting CloudSim SDN...
 Initialising...
-5030.0: ========== EXPERIMENT FINISHED ===========
+5007.0: ========== EXPERIMENT FINISHED ===========
 ========== HOST POWER CONSUMPTION based on Actual Workload processing ===========
-Host #127: 198.24769481336835
-Host #126: 198.28245095471053
-Host #125: 217.74257026334234
-Host #124: 193.8030944185495
-Host #123: 193.9059474932752
-Host #122: 193.69610452255267
-Host #121: 215.0522960775001
-Host #120: 191.41158593367336
-Host #119: 191.4549174163986
-Host #118: 191.2904352567272
-Host #117: 191.64941139564644
-Host #116: 191.74498096135807
-Host #115: 218.40803849417995
-Host #114: 239.0516010034693
-Host #113: 225.55760483746866
-Host #112: 240.25790547786667
-Host #111: 0.0
-Host #110: 0.0
-Host #109: 0.0
-Host #108: 0.0
-Host #107: 0.0
-Host #106: 0.0
-Host #105: 0.0
-Host #104: 0.0
-Host #103: 0.0
-Host #102: 0.0
-Host #101: 0.0
-Host #100: 0.0
-Host #99: 0.0
-Host #98: 0.0
-Host #97: 0.0
-Host #96: 0.0
-Host #95: 0.0
-Host #94: 0.0
+Host #127: 198.72454183680253
+Host #126: 198.65835177878216
+Host #125: 254.64519701598974
+Host #124: 204.99570216599483
+Host #123: 205.00927636099829
+Host #122: 204.9778847731579
+Host #121: 244.178593320168
+Host #120: 201.32042654573183
+Host #119: 201.4115927643032
+Host #118: 201.36704318538122
+Host #117: 201.44162490382868
+Host #116: 201.59783936977558
+Host #115: 235.7203373162022
+Host #114: 298.14622574559485
+Host #113: 294.20436518359196
+Host #112: 292.4060040257503
+Host #111: 293.4383809206787
+Host #110: 291.84867023075094
+Host #109: 291.41138465605957
+Host #108: 292.1781724861149
+Host #107: 290.7560148621436
+Host #106: 291.61293698576924
+Host #105: 290.9749916523403
+Host #104: 293.85998630341044
+Host #103: 290.1470154826379
+Host #102: 288.4905591586096
+Host #101: 288.1099193881182
+Host #100: 272.9260032628187
+Host #99: 272.61868914529913
+Host #98: 272.3095216797297
+Host #97: 271.99073964182963
+Host #96: 271.6883635038981
+Host #95: 271.4356623577125
+Host #94: 289.8838004546735
 Host #93: 0.0
 Host #92: 0.0
 Host #91: 0.0
@@ -158,29 +158,29 @@ Host #2: 0.0
 Host #1: 0.0
 Host #0: 0.0
 ========== SWITCH POWER CONSUMPTION AND DETAILED UTILIZATION ===========
-Switch:a_7_3: 98.49521101407929
-Switch:e_7_3: 104.04951183890175
-Switch:a_7_2: 98.36449652779963
-Switch:e_7_2: 104.06805315159392
-Switch:a_7_1: 98.4798700972368
-Switch:e_7_1: 103.94177140554446
-Switch:a_7_0: 98.47905433334792
-Switch:e_7_0: 103.98043325508463
-Switch:a_6_3: 0.0
-Switch:e_6_3: 0.0
-Switch:a_6_2: 0.0
-Switch:e_6_2: 0.0
-Switch:a_6_1: 0.0
-Switch:e_6_1: 0.0
-Switch:a_6_0: 0.0
-Switch:e_6_0: 0.0
-Switch:a_5_3: 0.0
-Switch:e_5_3: 0.0
-Switch:a_5_2: 0.0
+Switch:a_7_3: 103.76976275001192
+Switch:e_7_3: 103.848819891685
+Switch:a_7_2: 103.75746691946601
+Switch:e_7_2: 103.86025664446684
+Switch:a_7_1: 103.80819647223908
+Switch:e_7_1: 103.81949849724693
+Switch:a_7_0: 103.74170928890484
+Switch:e_7_0: 103.13539565203864
+Switch:a_6_3: 103.27125937223391
+Switch:e_6_3: 103.4354259916916
+Switch:a_6_2: 103.24763536389338
+Switch:e_6_2: 102.34584751316314
+Switch:a_6_1: 103.29273294165158
+Switch:e_6_1: 102.49358846666091
+Switch:a_6_0: 103.36307879444354
+Switch:e_6_0: 102.0419314055263
+Switch:a_5_3: 73.46587045761012
+Switch:e_5_3: 97.08026384316808
+Switch:a_5_2: 73.87263136417722
 Switch:e_5_2: 0.0
-Switch:a_5_1: 0.0
+Switch:a_5_1: 56.45299984473019
 Switch:e_5_1: 0.0
-Switch:a_5_0: 0.0
+Switch:a_5_0: 89.88950839414557
 Switch:e_5_0: 0.0
 Switch:a_4_3: 0.0
 Switch:e_4_3: 0.0
@@ -222,22 +222,22 @@ Switch:a_0_1: 0.0
 Switch:e_0_1: 0.0
 Switch:a_0_0: 0.0
 Switch:e_0_0: 0.0
-Switch:c_3_3: 0.0
-Switch:c_3_2: 0.0
-Switch:c_3_1: 0.0
-Switch:c_3_0: 0.0
-Switch:c_2_3: 0.0
-Switch:c_2_2: 0.0
-Switch:c_2_1: 0.0
-Switch:c_2_0: 0.0
-Switch:c_1_3: 0.0
-Switch:c_1_2: 0.0
-Switch:c_1_1: 0.0
-Switch:c_1_0: 0.0
-Switch:c_0_3: 0.0
-Switch:c_0_2: 0.0
-Switch:c_0_1: 0.0
-Switch:c_0_0: 0.0
+Switch:c_3_3: 95.16244913285536
+Switch:c_3_2: 95.7554091443243
+Switch:c_3_1: 94.58611992505806
+Switch:c_3_0: 94.62465108332115
+Switch:c_2_3: 95.02092033609915
+Switch:c_2_2: 95.80112699991915
+Switch:c_2_1: 95.08652785509162
+Switch:c_2_0: 95.18464527462514
+Switch:c_1_3: 94.4066621665304
+Switch:c_1_2: 95.6444439166898
+Switch:c_1_1: 94.59221323332673
+Switch:c_1_0: 94.8744709999634
+Switch:c_0_3: 94.58522390546298
+Switch:c_0_2: 95.03083580272013
+Switch:c_0_1: 95.40339350791172
+Switch:c_0_0: 95.70851891930789
 ========== HOST Overload percentage ===========
 Overload Host #127: 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Overload Host #126: 0.0/0.0=0.0... Scaled Overload duration= 0.0
@@ -381,8 +381,8 @@ Vm(VM #25 (web0-3) in (h_7_2_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #26 (web0-2) in (h_7_2_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #32 (web0-7) in (h_7_2_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #34 (web0-5) in (h_7_2_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #8 (ids0) in (h_7_2_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #31 (lb20) in (h_7_2_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #8 (ids0) in (h_7_2_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #6 (app0-2) in (h_7_2_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #9 (app0-21) in (h_7_2_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #10 (app0-17) in (h_7_2_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
@@ -407,15 +407,60 @@ Vm(VM #30 (app0-8) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #37 (app0-1) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #36 (lb10) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #40 (lb10-dup40) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #43 (lb10-dup43) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #39 (lb20-dup39) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #41 (ids0-dup41) in (h_7_0_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #46 (lb20-dup46) in (h_7_0_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #42 (lb20-dup42) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #48 (lb20-dup48) in (h_7_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 Vm(VM #38 (fw0-dup38) in (h_7_0_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #44 (ids0-dup44) in (h_7_0_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #42 (fw0-dup42) in (h_7_0_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #45 (fw0-dup45) in (h_7_0_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
-Vm(VM #47 (fw0-dup47) in (h_7_0_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #39 (fw0-dup39) in (h_7_0_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #50 (lb10-dup50) in (h_7_0_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #41 (ids0-dup41) in (h_7_0_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #43 (fw0-dup43) in (h_7_0_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #56 (lb20-dup56) in (h_7_0_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #45 (ids0-dup45) in (h_7_0_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #46 (fw0-dup46) in (h_7_0_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #62 (lb10-dup62) in (h_6_3_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #47 (ids0-dup47) in (h_6_3_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #49 (fw0-dup49) in (h_6_3_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #63 (lb20-dup63) in (h_6_3_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #51 (ids0-dup51) in (h_6_3_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #52 (fw0-dup52) in (h_6_3_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #69 (lb20-dup69) in (h_6_3_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #53 (ids0-dup53) in (h_6_3_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #54 (fw0-dup54) in (h_6_3_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #71 (lb10-dup71) in (h_6_3_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #55 (ids0-dup55) in (h_6_3_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #57 (fw0-dup57) in (h_6_3_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #73 (lb20-dup73) in (h_6_2_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #58 (ids0-dup58) in (h_6_2_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #59 (fw0-dup59) in (h_6_2_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #75 (lb10-dup75) in (h_6_2_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #60 (ids0-dup60) in (h_6_2_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #61 (fw0-dup61) in (h_6_2_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #78 (lb10-dup78) in (h_6_2_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #65 (ids0-dup65) in (h_6_2_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #64 (fw0-dup64) in (h_6_2_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #66 (fw0-dup66) in (h_6_2_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #67 (fw0-dup67) in (h_6_2_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #81 (lb10-dup81) in (h_6_1_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #68 (ids0-dup68) in (h_6_1_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #70 (fw0-dup70) in (h_6_1_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #83 (lb20-dup83) in (h_6_1_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #72 (ids0-dup72) in (h_6_1_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #74 (fw0-dup74) in (h_6_1_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #76 (ids0-dup76) in (h_6_1_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #90 (lb20-dup90) in (h_6_1_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #77 (fw0-dup77) in (h_6_1_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #79 (ids0-dup79) in (h_6_1_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #80 (fw0-dup80) in (h_6_1_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #82 (ids0-dup82) in (h_6_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #84 (fw0-dup84) in (h_6_0_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #85 (ids0-dup85) in (h_6_0_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #86 (fw0-dup86) in (h_6_0_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #87 (ids0-dup87) in (h_6_0_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #88 (fw0-dup88) in (h_6_0_1)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #89 (ids0-dup89) in (h_6_0_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #91 (fw0-dup91) in (h_6_0_0)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #93 (fw0-dup93) in (h_5_3_3)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
+Vm(VM #94 (fw0-dup94) in (h_5_3_2)): 0.0/0.0=0.0... Scaled Overload duration= 0.0
 ========== CONFIGURATIONS ===========
 workingDirectory :project-acn/
 overbookingTimeWindowInterval:5.0
@@ -428,9 +473,9 @@ UNDERLOAD_THRESHOLD_VM:0.3
 DECIDE_SLA_VIOLATION_GRACE_ERROR:1.0
 ==================================================
 ========== PARAMETERS ===========
-experimentName :ACN_On_MFFCPU_
+experimentName :ACN_On_MFF_
 CPU_REQUIRED_MIPS_PER_WORKLOAD_PERCENT:1.0
-monitoringTimeInterval:10.0
+monitoringTimeInterval:1.0
 overbookingTimeWindowNumPoints:1.0
 migrationTimeInterval:5.0
 OVERBOOKING_RATIO_MAX:1.0
@@ -439,9 +484,9 @@ OVERBOOKING_RATIO_INIT:1.0
 OVERBOOKING_RATIO_UTIL_PORTION:0.0
 OVERLOAD_HOST_PERCENTILE_THRESHOLD:0.0
 ========== TOTAL POWER CONSUMPTION ===========
-Host energy consumed: 3291.556639320087
-Switch energy consumed: 809.8584016235884
-Total energy consumed: 4101.415040943675
+Host energy consumed: 8764.48581846465
+Switch energy consumed: 3565.461492072362
+Total energy consumed: 12329.94731053701
 ========== MIGRATION ===========
 Attempted: 0
 Completed: 0
@@ -451,27 +496,27 @@ Overloaded Percent: 0.0
 ========== VM OVERLOADED ===========
 Scaled overloaded: 1.0
 Overloaded Percent: 0.0
-Simultanously used hosts:16
+Simultanously used hosts:34
 ============= SDNBroker.printResult() =============================
-Workloads Num: 188073
-Workloads CPU Num: 940365
-Workloads Network Num: 752292
-Workloads Timed Out Num: 557098
-Total serve time: 2076623.3816665355
-Total serve time CPU: 26870.616056663297
-Total serve time Network: 2049752.7656098714
-Avg serve time: 11.04158162876402
+Workloads Num: 739466
+Workloads CPU Num: 3697330
+Workloads Network Num: 2957864
+Workloads Timed Out Num: 5703
+Total serve time: 2324210.2425519903
+Total serve time CPU: 105347.44319743333
+Total serve time Network: 2218862.79935456
+Avg serve time: 3.1430927758030665
 Overall overtime percentage: 0.0
-Avg serve time CPU: 0.028574666280288288
+Avg serve time CPU: 0.028492842996820228
 CPU overtime percentage: 0.0
-Avg serve time Network: 2.7246770743406437
-Network overtime percentage: 0.9051073253470727
+Avg serve time Network: 0.7501571402047424
+Network overtime percentage: 0.99999932383639
 ============= SDNBroker.printResult() Group analysis =======================
-Group num: 0, groupNumWorkloads:188073
-Group num: 0, groupTotalServetime:2076623.3816665355
-Group num: 0, groupTotalServetimeCPU:26870.616056663297
-Group num: 0, groupTotalServetimeNetwork:2049752.7656098714
-Group num: 0, group avg Serve time:11.04158162876402
-Group num: 0, group avg Serve time CPU:0.14287333140144146
-Group num: 0, group avg Serve time Network:10.898708297362575
+Group num: 0, groupNumWorkloads:739466
+Group num: 0, groupTotalServetime:2324210.2425519903
+Group num: 0, groupTotalServetimeCPU:105347.44319743333
+Group num: 0, groupTotalServetimeNetwork:2218862.79935456
+Group num: 0, group avg Serve time:3.1430927758030665
+Group num: 0, group avg Serve time CPU:0.14246421498410114
+Group num: 0, group avg Serve time Network:3.00062856081897
 CloudSim SDN finished!

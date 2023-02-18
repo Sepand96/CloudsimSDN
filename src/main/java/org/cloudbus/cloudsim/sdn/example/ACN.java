@@ -128,10 +128,13 @@ public class ACN {
 		Configuration.monitoringTimeInterval = 1; // 1 minute
 		Configuration.TIME_OUT = 10; // 10 seconds SLA
 		Configuration.workingDirectory = "project-acn/";
+		boolean isExperiment3 = false;
 		// Experiment 1
 //		Configuration.CPU_SIZE_MULTIPLY = 0.1;
 		// Experiment 2
 //		Configuration.NETWORK_PACKET_SIZE_MULTIPLY = 10;
+		// Experiment 3
+//		isExperiment3 = true;
 		// Experiment 4
 //		Configuration.monitoringTimeInterval = 100;
 		// Experiment 5
@@ -151,6 +154,9 @@ public class ACN {
 		String mode = args[n++];
 		if (mode.equals("max")) {
 			deploymentFile = "project-acn/resources/sfc.virtual.max.json";
+		}
+		if (isExperiment3) {
+			deploymentFile = "project-acn/resources/sfc.virtual.min.experiment3.json";
 		}
 		
 		String sfcOn = args[n++];
